@@ -1,4 +1,87 @@
-body {background-color:tan;}
-h1{color:green;}
+/**
+ * Kajamohan.K
+ * Simple Interest Calculator
+ * CSS File
+ */
 
+body {
+    background-color: #1a181f;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    width: 100%;
+}
 
+.mainDiv #form{
+    height: 100%;
+    width: 100%;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(1, 109, 109);
+    box-shadow: inset 1px 1px 2px #3b4aeb, inset -1px -1px 2px #541fe7;  
+    overflow: hidden;
+}
+h1 {
+    font-size: 60px;
+    font-weight: 200;
+    text-align: center;
+    font-weight: bold;
+    color: #16680b;
+    background: transparent;
+    text-shadow: 1px 1px 0px rgb(80, 46, 46);
+}
+
+ button:hover,input:hover{ 
+        box-shadow: inset 1px 1px 2px #3b4aeb, inset -1px -1px 2px #4621ac;  
+}
+
+input,button{
+    font-size: 16px;
+    display: block;
+    width: 80%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background: transparent;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+label,#rateVal{
+    font-size: 30px;
+    font-weight: 200;
+}
+
+#compute, #reset{
+    display: inline;
+    width: 40%;
+    height: 70px;
+    border-radius: 25px;
+    background: #9b95ad;
+    color: rgb(63, 56, 56);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.resultShow{
+   font-size: 26px;
+    display: block;
+    width: 50%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    color: #4621ac;
+    background: transparent;
+    box-shadow: inset 2px 2px 5px #babecc, inset -5px -5px 10px #ffffff;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+footer{
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+}
