@@ -1,16 +1,39 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Simple Interest Calculator</h1>
+    <title>Simple Interest Calculator</title>
+</head>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+<body onload="showRate()">
+    <div class="mainDiv">
+        <div id="form">
+            <h1> <i> Simple Interest Calculator </i> </h1>
 
-        <button onclick="compute()">Compute</button>
-    </body>
+            <label for="principal">Amount : </label>
+            <input type="number" min="0" id="principal"> <br />
+
+            <label for="rate">Rate : </label><span id="rateVal"></span>
+            <input type="range" min="0" max="50" id="rate" step="0.01" onchange="showRate()">
+            <br />
+
+            <label for="years">No. of Years : </label>
+            <input type="number" min="0" id="years"> <br />
+
+            <button id="compute" onclick="calInterest()">Compute Interest</button>
+
+            <input type="reset" id="reset" onclick="resetAll()"><br /> <br />
+            <span id="result"></span>
+
+            <footer> <i> &#169; This Calculator belongs to Kajamohan.K</i> </footer>
+        </div>
+
+
+    </div>
+</body>
+
 </html>
