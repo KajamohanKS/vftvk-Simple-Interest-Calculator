@@ -31,7 +31,7 @@ function calInterest() {
         document.getElementById("result").innerHTML = op;
 
     } else {
-        document.getElementById("result").innerText = "Check the Value!!!!<br>Enter a Positive Number";
+        document.getElementById("result").innerHTML= "Check the Value!!!!<br>Enter a Positive Number";
     }
 }
 
