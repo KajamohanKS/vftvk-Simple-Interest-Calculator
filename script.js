@@ -50,7 +50,7 @@ function checkValue() {
 
 // Reset the Rate, Principal and No.of Years value to Zero
 function resetAll() {
-    document.getElementById("rate").value ="" ;
+    document.getElementById("rate").value = 0 ;
     document.getElementById("principal").value ="" ;
     document.getElementById("years").value ="" ;
     showRate();
