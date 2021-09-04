@@ -29,9 +29,14 @@ function calInterest() {
 
     if (checkValue()) {
         document.getElementById("result").innerHTML = op;
+        document.getElementById("principal").removeAttribute('class', 'setfocus');
 
     } else {
-        document.getElementById("result").innerHTML= "Check the Value!!!!<br>Enter a Positive Number";
+        document.getElementById("result").innerHTML = "Check the Value!!!!<br>Enter a Positive Number";
+        alert("Enter a Positive Number");
+        document.getElementById("principal").setAttribute('class','setfocus');
+        document.getElementById("principal").focus();
+        
     }
 }
 
@@ -50,9 +55,9 @@ function checkValue() {
 
 // Reset the Rate, Principal and No.of Years value to Zero
 function resetAll() {
-    document.getElementById("rate").value = 0 ;
-    document.getElementById("principal").value ="" ;
-    document.getElementById("years").value ="" ;
+    document.getElementById("rate").value = 1;
+    document.getElementById("principal").value = "";
+    document.getElementById("years").value = "1";
     showRate();
     var res = document.getElementById("result");
     res.removeAttribute("class");

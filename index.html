@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Simple Interest Calculator</title>
+    <title> Web App - Simple Interest Calculator</title>
 </head>
 
 <body onload="showRate()">
@@ -18,7 +18,7 @@
             <input type="number" min="0" id="principal"> <br />
 
             <label for="rate">Rate : </label><span id="rateVal"></span>
-            <input type="range" min="0" max="50" id="rate" step="0.01" onchange="showRate()">
+            <input type="range" min="1" max="20" id="rate" step="0.01" onchange="showRate()">
             <br />
 
             <label for="years">No. of Years : </label>
@@ -34,7 +34,7 @@
                 <option value="9">9</option>
                 <option value="10">10</option>
             </select>
-            
+
             <br />
 
             <button id="compute" onclick="calInterest()">Compute Interest</button>
